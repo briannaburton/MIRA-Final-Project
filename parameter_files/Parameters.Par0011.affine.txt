@@ -51,6 +51,7 @@
 (WriteTransformParametersEachResolution "true")
 (WriteResultImageAfterEachResolution "false")
 (WriteResultImage "true")
+(ResultImageFormat "nii.gz")
 (ShowExactMetricValue "false")
 (ErodeMask "false")
 (UseDirectionCosines "true")
