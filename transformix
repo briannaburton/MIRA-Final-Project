@@ -1,0 +1,5 @@
+#!/bin/bash
+export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
+
+
+transformix -def ./data/copd1/copd1_300_iBH_xyz_r1_elastix.txt -out ./registration-results/affine+bspline/copd1/ -tp ./registration-results/affine+bspline/copd1/TransformParameters.1.txt
