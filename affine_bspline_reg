@@ -1,7 +1,0 @@
-#!/bin/bash
-export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
-
-mkdir ./registration-results/par0000/copd2
-
-elastix -f ./data/copd2/copd2_iBHCT.nii.gz -m ./data/copd2/copd2_eBHCT.nii.gz -out ./registration-results/par0000/copd2 -p ./parameter_files/par0000affine.txt -p ./parameter_files/par0000bspline.txt
-
