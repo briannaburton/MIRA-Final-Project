@@ -1,0 +1,9 @@
+#!/bin/bash
+export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
+
+elastix -f ../data/./copd2/copd2_iBHCT.nii.gz -m ../data/./copd2/copd2_eBHCT.nii.gz -out ../registration-results/par0011/copd2/ -p ../parameter_files/Parameters.Par0011.affine.txt -p ../parameter_files/Parameters.Par0011.bspline1.txt
+elastix -f ../data/./copd4/copd4_iBHCT.nii.gz -m ../data/./copd4/copd4_eBHCT.nii.gz -out ../registration-results/par0011/copd4/ -p ../parameter_files/Parameters.Par0011.affine.txt -p ../parameter_files/Parameters.Par0011.bspline1.txt
+elastix -f ../data/./copd3/copd3_iBHCT.nii.gz -m ../data/./copd3/copd3_eBHCT.nii.gz -out ../registration-results/par0011/copd3/ -p ../parameter_files/Parameters.Par0011.affine.txt -p ../parameter_files/Parameters.Par0011.bspline1.txt
+elastix -f ../data/./copd1/copd1_iBHCT.nii.gz -m ../data/./copd1/copd1_eBHCT.nii.gz -out ../registration-results/par0011/copd1/ -p ../parameter_files/Parameters.Par0011.affine.txt -p ../parameter_files/Parameters.Par0011.bspline1.txt
+
+
