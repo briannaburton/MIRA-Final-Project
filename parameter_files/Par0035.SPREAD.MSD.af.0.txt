@@ -12,7 +12,7 @@
 (FixedImagePyramid "FixedSmoothingImagePyramid")
 (MovingImagePyramid "MovingSmoothingImagePyramid")
 (Interpolator "BSplineInterpolator")
-(Metric "AdvancedMattesMutualInformation")
+(Metric "AdvancedMeanSquares")
 (Optimizer "AdaptiveStochasticGradientDescent")
 (ResampleInterpolator "FinalBSplineInterpolator")
 (Resampler "DefaultResampler")

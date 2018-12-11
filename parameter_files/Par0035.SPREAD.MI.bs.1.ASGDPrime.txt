@@ -58,11 +58,11 @@
 (UseAdaptiveStepSizes "true")
 
 (MaximumNumberOfIterations 500)
+
 (NumberOfSpatialSamples 5000)
 
-// This is for original ASGD
-(ASGDParameterEstimationMethod "Original")
-
+// This is for ASGD prime
+(ASGDParameterEstimationMethod "OriginalButSigmoidToDefault")
 
 // ********** Transform
 
