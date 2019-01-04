@@ -41,7 +41,7 @@
 
 // ********** Metric
 
-(NumberOfHistogramBins 32)
+(NumberOfHistogramBins 256)
 (FixedLimitRangeRatio 0.0)
 (MovingLimitRangeRatio 0.0)
 (FixedKernelBSplineOrder 1)
@@ -57,8 +57,8 @@
 //***************testing
 (UseAdaptiveStepSizes "true")
 
-(MaximumNumberOfIterations 1000)
-(NumberOfSpatialSamples 5000)
+(MaximumNumberOfIterations 500)
+(NumberOfSpatialSamples 10000)
 
 // This is for original ASGD
 (ASGDParameterEstimationMethod "Original")

@@ -41,7 +41,7 @@
 
 // ********** Metric
 
-(NumberOfHistogramBins 32)
+(NumberOfHistogramBins 256)
 (FixedLimitRangeRatio 0.0)
 (MovingLimitRangeRatio 0.0)
 (FixedKernelBSplineOrder 1)
@@ -59,14 +59,14 @@
 
 (MaximumNumberOfIterations 500)
 
-(NumberOfSpatialSamples 7500)
+(NumberOfSpatialSamples 5000)
 
 // This is for ASGD prime
 (ASGDParameterEstimationMethod "OriginalButSigmoidToDefault")
 
 // ********** Transform
 
-(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0)
+(FinalGridSpacingInPhysicalUnits 6.0 6.0 6.0)
 (GridSpacingSchedule 4.0 2.0 1.0)
 (HowToCombineTransforms "Compose")
 
