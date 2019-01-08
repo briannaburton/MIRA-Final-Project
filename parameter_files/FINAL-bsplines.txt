@@ -66,7 +66,7 @@
 
 // ********** Transform
 
-(FinalGridSpacingInPhysicalUnits 5.0 5.0 5.0)
+(FinalGridSpacingInPhysicalUnits 6.0 6.0 6.0)
 (GridSpacingSchedule 4.0 2.0 1.0)
 (HowToCombineTransforms "Compose")
 
