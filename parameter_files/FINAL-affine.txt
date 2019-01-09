@@ -22,8 +22,8 @@
 // ********** Pyramid
 
 // Total number of resolutions
-(NumberOfResolutions 3)
-(ImagePyramidSchedule 4 4 4 2 2 2 1 1 1)
+(NumberOfResolutions 5)
+(ImagePyramidSchedule 16 16 16 8 8 8 4 4 4 2 2 2 1 1 1)
 
 
 // ********** Transform
