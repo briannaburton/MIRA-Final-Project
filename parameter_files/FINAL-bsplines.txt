@@ -24,8 +24,8 @@
 // ********** Pyramid
 
 // Total number of resolutions
-(NumberOfResolutions 3)
-(ImagePyramidSchedule  4 4 4 2 2 2 1 1 1)
+(NumberOfResolutions 5)
+(ImagePyramidSchedule  16 16 16 8 8 8 4 4 4 2 2 2 1 1 1)
 
 // ********** ImageSampler
 
@@ -66,8 +66,8 @@
 
 // ********** Transform
 
-(FinalGridSpacingInPhysicalUnits 6.0 6.0 6.0)
-(GridSpacingSchedule 4.0 2.0 1.0)
+(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0)
+(GridSpacingSchedule 16.0 8.0 4.0 2.0 1.0)
 (HowToCombineTransforms "Compose")
 
 
