@@ -53,7 +53,7 @@
 (WriteTransformParametersEachResolution "true")
 (WriteResultImageAfterEachResolution "false")
 (WritePyramidImagesAfterEachResolution "false")
-(WriteResultImage "true")
+(WriteResultImage "false")
 (ResultImageFormat "nii.gz")
 (ShowExactMetricValue "false")
 (ErodeMask "false")
