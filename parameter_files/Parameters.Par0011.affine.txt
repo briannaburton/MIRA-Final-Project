@@ -50,7 +50,7 @@
 (WriteTransformParametersEachIteration "false")
 (WriteTransformParametersEachResolution "true")
 (WriteResultImageAfterEachResolution "false")
-(WriteResultImage "true")
+(WriteResultImage "false")
 (ResultImageFormat "nii.gz")
 (ShowExactMetricValue "false")
 (ErodeMask "false")
