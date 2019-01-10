@@ -1,4 +1,0 @@
-elastix -f ../data/./copd5/copd5_iBHCT.nii.gz -m ../data/./copd5/copd5_eBHCT.nii.gz -out ../registration-results/challenge-day-results/copd5/ -p ../parameter_files/FINAL-affine.txt -p ../parameter_files/FINAL-bsplines.txt
-transformix -def ../data/copd5/copd5_300_iBH_xyz_r1_elastix.txt -out ../registration-results/challenge-day-results/copd5/ -tp ../registration-results/challenge-day-results/copd5/TransformParameters.1.txt
-elastix -f ../data/./copd6/copd6_iBHCT.nii.gz -m ../data/./copd6/copd6_eBHCT.nii.gz -out ../registration-results/challenge-day-results/copd6/ -p ../parameter_files/FINAL-affine.txt -p ../parameter_files/FINAL-bsplines.txt
-transformix -def ../data/copd6/copd6_300_iBH_xyz_r1_elastix.txt -out ../registration-results/challenge-day-results/copd6/ -tp ../registration-results/challenge-day-results/copd6/TransformParameters.1.txt
