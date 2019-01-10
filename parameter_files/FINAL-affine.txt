@@ -9,8 +9,8 @@
 // ********** Components
 
 (Registration "MultiResolutionRegistration")
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(MovingImagePyramid "MovingSmoothingImagePyramid")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
 (Interpolator "BSplineInterpolator")
 (Metric "AdvancedMattesMutualInformation")
 (Optimizer "AdaptiveStochasticGradientDescent")
@@ -22,35 +22,27 @@
 // ********** Pyramid
 
 // Total number of resolutions
-(NumberOfResolutions 5)
+(NumberOfResolutions 6)
 (ImagePyramidSchedule 16 16 16 8 8 8 4 4 4 2 2 2 1 1 1)
 
 
 // ********** Transform
 
-(AutomaticTransformInitialization "true")
 (AutomaticScalesEstimation "true")
+(AutomaticTransformInitialization "true")
 (HowToCombineTransforms "Compose")
 
 
 // ********** Optimizer
 
 // Maximum number of iterations in each resolution level:
-(MaximumNumberOfIterations 500)
+(MaximumNumberOfIterations 2000)
 
 (AutomaticParameterEstimation "true")
 (UseAdaptiveStepSizes "true")
-// This is for original ASGD
-(ASGDParameterEstimationMethod "Original")
+
 
 // ********** Metric
-
-(NumberOfHistogramBins 256)
-(FixedLimitRangeRatio 0.0)
-(MovingLimitRangeRatio 0.0)
-(FixedKernelBSplineOrder 1)
-(MovingKernelBSplineOrder 3)
-(UseFastAndLowMemoryVersion "true")
 
 
 // ********** Several
@@ -58,8 +50,8 @@
 (WriteTransformParametersEachIteration "false")
 (WriteTransformParametersEachResolution "true")
 (WriteResultImageAfterEachResolution "false")
-(WritePyramidImagesAfterEachResolution "false")
 (WriteResultImage "false")
+(ResultImageFormat "nii.gz")
 (ShowExactMetricValue "false")
 (ErodeMask "false")
 (UseDirectionCosines "true")
@@ -71,6 +63,8 @@
 (ImageSampler "RandomCoordinate")
 (NumberOfSpatialSamples 5000)
 (NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "false")
+(MaximumNumberOfSamplingAttempts 5)
 
 
 // ********** Interpolator and Resampler
@@ -84,5 +78,3 @@
 //Default pixel value for pixels that come from outside the picture:
 (DefaultPixelValue 0)
 
-//the format of resulting deformed moving image
-(ResultImageFormat "nii.gz")
